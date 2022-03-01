@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 :root {
 	--dark: #374151;
 	--darker: #1F2937;
@@ -10,7 +11,7 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Fira sans", sans-serif;
+	font-family: 'Hubballi', cursive;
 }
 body {
 	display: flex;
@@ -18,6 +19,53 @@ body {
 	min-height: 100vh;
 	color: #FFF;
 	background-color: var(--dark);
+}
+.backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;  
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+}
+.card {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    /* align-items: center; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 300px;
+    z-index: 100;
+    background-color: var(--dark);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    
+}
+.backdrop h2 {
+    color: lightsalmon;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 10px;
+}
+.backdrop p {
+    color: white;
+    font-size:1.25rem;
+    font-weight: 200;
+    padding: 10px;
+}
+.backdrop button{
+    background-color: crimson;
+    color: var(--light);
+    padding: 5px;
+    border-radius: 5px;
+	/* -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+    font-size: 1rem;
+}
+.content{
+    z-index: 1;
 }
 header{
     padding: 2rem 1rem;

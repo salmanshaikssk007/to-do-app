@@ -10,12 +10,13 @@
     <title>To Do App</title>
 </head>
 <body>
-
+<div id="backdrop"></div>
+<div id="content">
     <!-- Header component -->
     <header>
         <h1>Add Task</h1>
         <form action="" id="new-task-form">
-            <input type="text" id="new-task-input" placeholder="Whats the  task !">
+            <input type="text" id="new-task-input" placeholder="What's the  task !">
             <input type="submit" id="new-task-submit" value="Add Task">
         </form>
     </header>
@@ -25,19 +26,23 @@
         <section class="task-list">
             <h2>Tasks</h2>
             <div id="tasks">
-                <div class="task">
-                    <div class="content">
-                        <input type="text" class="text" value="New Task here" readonly>
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
+               <!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
             </div>
         </section>
     </main>
-    
+</div>
 <script src="./app.js"></script>
 </body>
 </html>
